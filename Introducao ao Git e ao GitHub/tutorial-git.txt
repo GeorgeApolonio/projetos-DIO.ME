@@ -1,0 +1,146 @@
+hello
+
+openssl sha1 tutorial-git.txt - cria uma chave/criptografia de 40 digitos que muda a cada modificação do arquivo
+
+git hash-object tutorial-git.txt - cria uma chave/criptografia de 40 digitos que muda a cada modificação do arquivo
+
+
+objetos internos do git -> blobs, tree, commits
+
+BLOBS estrutura -> openssl sha1 blob 9\0tutotial-git.txt (blob+tamanho+\0+arquivo)
+TREE estrutura -> pode apontar para um blob ou para outrs arvores.
+COMMIT estrutura -> apont para arvore, parente, autor, mensagem, timestmp
+
+CRIAR CHAVE SSH PARA O GITHUB
+vai no git bash (terminal)
+ssh-keygen -t ed25519 -C george.apolonio@hotmail.com
+enter
+escolhe senha: 98147078
+repete senha: 98147078
+finalizado
+vai na pasta onde foi criada a chave c:\users\george\.ssh
+cat id_ed25519.pub  (da um cat na chave publica par ver o sha1)
+copia a chave 
+vai no site do guihub e cola a chave no item ssh
+volta no git bash para ativar o AGENT ssh
+eval $(ssh-agent -s)
+aparece Agent pid "numero" que pode variar - isso é um startup da chave
+ssh-add id_ed25519 - > agora passa a chave privada para o AGENT par ele poder descriptografro o que for recebido do github - tem que estr no diretorio d chave e usar o rquivo d chave privda
+
+CLONAR UM REPOSITORIO "PRIVADO" DO GITHUB
+abra o repositorio
+copie o link SSH do mesmo
+abra o git bash
+va pra sua pasta de projetos
+git clone <link ssh copiado> - 
+da um yes
+pronto, o repositorio foi clonado
+
+
+CRIAR UM TOKEN GITHUB
+cria um token e armazena na maquina e toda vez que for fazer um commit no git eu uso o token ao inves de usuario e senha
+vai no github
+developer settings
+personal cess tokens
+new token
+coloca uma note
+escolhe dias par expirar
+marca repo - para que no git opçoes padroes sejam modificadas
+copia o token e armazena no computador (depois que sai d tel ele some e teria que gerr outro)
+
+CLONAR USANDO O TOKEN
+peg o link https do repositorio
+abre o git bash
+vai para a past de projetos
+git clone <link https copiado>
+ele bre a janela do github pedindo usuario e senha ou token
+escolhe token
+cola o token gerado
+o repositorio ento e clonado
+
+
+FAZENDO UM PROJETO GIT DO INICIO
+sempre tem o "git" no inicio de qualquer comando
+
+abre o git bash no c clicando com o direito
+cd workspace/ -> para entrar na pasta de projetos
+mkdir livro-receitas -> cria a pasta
+cd livro-receitas -> entra na pasta do projeto especifico
+ls -> visualizar o conteudo
+git init -> inicializa o git deste projeto, ou seja, criou um repositorio - ele avisa que esta vazio mais tem uma  pasta oculta dos codigos do git
+ls -a -> mostra a pasta oculta
+
+### se for a primeira vez usando o git, precisa fazez algumas configuracoes
+git config --global user.email "george.apolonio@hotmail.com"
+git config --global user.name George
+
+### agora criar um arquivo
+cria um arquivo markdown que equivale a um html - é um arquivo de texto com extensão .mt
+
+estrogonofe.mt
+#Estrogonofe de frango -> formata igual ao <h1>
+:chicken -> coloca uma gif de galinha
+**negrito** -> fica negrito
+_italic_ -> fic italico
+espaco-espaco -> lista desordenada
+existem outras formatações
+
+agora precisamos comitar o arquivo
+git add *
+git commit -m "commit inicial" -> precisa sempre de um nome
+vai aparecer detalhes e um deles é o inicio do sha1
+
+
+untracked - arquivos desconhecidos do git (estrogonofe.mt)
+tracked - arquivos conhecidos pelo git 
+unmodified - arquivo nao modificado
+modified - arquivo modificdo
+staged - arquivos se preparando para pardicipar de algo
+
+sequencia:
+UNTRACKE -> STAGED
+UNMODIFIED -> MODIFIED -> STAGED
+STAGED -> UNMODIFIED
+UNMODIFIED (REMOVE O ARQUIVO)-> UNTRACKED
+
+mkdir receitas -> criou uma pasta nova
+mv estrogonofe.md ./receitas -> moveu o arquivo da pasta rais ára uma subpasta
+
+##ao modificar podemos ver o que esta pendente no git com o:
+git status -> avisa al alterações pendentea para comitar
+
+##unmodified as pendencias para staged
+git add estrogonofe.mt
+git add estrogonofe.md
+git add receitas/
+
+git restore -> retira do stage e volta para unmodified
+
+## de staged para unmodified
+git commit -m "cria pasta receita, move arquivo para receitas, apaga arquivo mt"
+
+CRIAR UM ARQUIVO INDICE PARA O GITHUB
+o nome dele é readme.md
+
+TROCAR O EMAIL E NOME - o emil e nome precisam ser iguais ao do github
+git config --list -> list as configurações 
+git config --global --unset user.email
+git config --global --unset user.name
+
+ENVIAR O REPOSITORIO DO PC PARA O GITHUB
+cria um repositorio no github sem o readme.md
+copia o link do repositorio que foi criado
+git remote add origin https://github.com/GeorgeApolonio/livro-receitas.git
+git remote -v -> para checar os repositorios e para onde aponta
+
+obs: o origin é só um apelido para facilitar o resto dos comandos
+
+git push origin master -> empurra do pc para o github
+
+
+CONFLITO DE MASH - CONFLITO PORQUE O REPOSITORIO FOI ALTERADO SIMULTANEAMENTE POR DUAS PESSOAS NA MESMA LINHA
+git pull origin master -> puxar o repositorio do github
+
+
+CLONAR UM REPOSITORIO
+git clone https://github.com/python/cpython.git
