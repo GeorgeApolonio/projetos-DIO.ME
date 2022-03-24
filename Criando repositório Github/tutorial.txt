@@ -1,0 +1,18 @@
+PASSOS PADRÃO
+
+CRIANDO REPOSITORIO
+- logar no github
+- acessar repositories
+- escolher new
+- colocar um nome; colocar uma descrição, escolher publico ou privado; add readme
+- clicar create
+
+CLONANDO REPOSITORIO
+- abre o repositorio criado no github
+- clica em CODE
+- copia o endereço HTTPS
+- vai para a pasta de projetos no PC
+- clica com direito na pasta e escolhe GIT BASH HERE
+- vai abrir o terminal BASH DO GIT (equivale ao PROMPT de COMANDO DO MS-DOS)
+- digita o comando -> git clone <link copiado> e pressiona enter
+- aguarda a conclusão e o repositório já estara disponível no pc para trabalhar
