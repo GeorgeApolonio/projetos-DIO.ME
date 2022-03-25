@@ -1,0 +1,85 @@
+PILARES DO PENSAMENTO COMPUTACIONAL
+- Decomposição
+- Padões
+- Abstração
+- Algoritmo
+
+
+PENSAMENTO
+- processo para solução de problemas utilizando ou não sistemas computacionais
+
+
+ABSTRAÇÃO
+- isolar o que for relevante em uma situação a ser verificada, estudada, trablhada.
+
+OBS: repl.it - > interpretador online de várias linguagens
+EX.:
+# a abstração nesse caso é não importar como foi gerada a nota de cada luno
+# o que interessa é saber a Media Geral da turma
+aluno1 = 9.0
+aluno2 = 7.5
+aluno3 = 8.2
+
+mediaGeral = (aluno1 + aluno2 + aluno3)/3
+print(f'Média geral é {mediaGeral:.3}')
+
+
+AGORITMICO
+- processo para solução de problema utilizando uma sequência finita.
+
+# algoritmico - sequência de passos para uma solução
+
+arroz_kg = 3.50
+feijao_kg = 6.60
+carne_kg = 35.00
+
+valor_disponível = 10.00
+
+if arroz_kg <= 10:
+    print('Pode comprar!')
+else:
+    print('Não pode comprar!')
+
+if feijao_kg <= 10:
+    print('Pode comprar!')
+else:
+    print('Não pode comprar!')
+
+if carne_kg <= 10:
+    print('Pode comprar!')
+else:
+    print('Não pode comprar!')
+
+
+DECOMPOSIÇÃO
+processo de dividir o problema em partes menores - solucionar cada parte de forma que, ao juntar,
+resolva o todo
+
+# decomposição - dividir o problema em partes menores
+
+salario_liq = 0
+
+salario_bruto = 1200.00
+inss = salario_bruto * 0.08
+periculosidade = salario_bruto * 0.10
+
+salario_liq = salario_bruto + periculosidade - inss
+print('salario bruto:', salario_bruto)
+print('inss:', inss)
+print('periculosidade:', periculosidade)
+print('Salário líquido:', salario_liq)
+
+
+PADRÃO
+- identificar situações que sempre ocorrem ou se repetem durante os processo
+
+
+lista = {"arroz": 3.50, "feijao": 6.60, "carne": 35.00}
+
+valor_disponivel = 10.00
+
+for i in lista:
+    if lista[i] <= valor_disponivel:
+        print('Pode comprar {}'.format(i))
+    else:
+        print('Não pode comprar {}.'.format(i))
