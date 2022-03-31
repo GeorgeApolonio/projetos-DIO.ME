@@ -1,0 +1,69 @@
+gestão waterfall - a proxima etapa so e feita quando termina a anterior
+gestãao ágil - divido em partes e é incremental e itertivo
+
+scrum - transparencia / adaptação / inspeção
+
+PO - PRIORIZAR O BACKLOG - AREA DE NEGOCIO - UMA PESSOA - PRODUCT OWNER
+SM - USO CORRETO DO SCRUM - SCRUM MASTER - NAO É GERENTE - É FACILITADOR - TREINA - 
+DEV - TIME DE DESENVOLVIMENTO - DESENVOLVER, TESTAR, CRIAR, DESENHAR
+
+CERIMONIA SCRUM -  
+
+TIME BOX - TEMPO MAXIMO PARA A CERIMONIA OU SPRINT
+
+SPINT - CORRIDA - PRINCIPAL EVENTO DO SCRUM - 3O DIAS OU MENOS - PLANEJAMENTO/REUNIAO/REVISO/RETROSPECTIVA- PARTICIPA O PO, DEV, SM - O QUE FZER, COMO FAZER
+PLANNING POKER (TAREFAS) - DAILY MEETING - REUNIAO DE PE - STANDUP - REVISAO (ULTIMO DIA) 4H - RETROSPECTIVA 3H TRANSPRENCIA APONTA ERROS LICOES APRENDIDAS - 
+
+PAPEIS E RESPONSABILIDADES DO PO
+- visão do que será desenvolvidados
+- as necessidades atender
+- o publico
+- valor
+- cancelar o projeto
+- fazer um estudo
+- nao e um chefe
+- explicr objetivo do backlog
+- não um comite
+- representa area de negocio
+- duvida e valida
+- product backlog -> sprint backlog
+- refining e planning (multiplas squads e projeto)
+- entender a demanda e estrair o maior valor possivel
+- ajudar o time a entender a demanda e tira as duvidas ao longo da sprint
+
+ANALISANDO ESCOPO
+- definir escopo ponto mais critico
+- sempre agregar valor
+- inspecionar cada entrega
+- realizar adaptacoes necessarias
+- product backlog - epicos (incremento sem detalhamento) e estorias (detalhamento dos epicos)
+- escrever uma estoria - nome estoria/descrição/regras/tela/kip/tagueamento/criterios de aceite
+- riscos positivos - priorizar outros itens do backlog - positivos e negativos - 
+- entender o ganho antes de definir o escopo
+
+PAPEL DO PO NA TRANSFORMACAO DIGITAL
+- trnsformcao digital -uso da tecnologia para desempenho, alcance, resultados
+- juntr as partes e montar o planejamento
+- pode alterar o planejamento
+
+CONCEITOS E PLANEJAMENTO DE TAREFAS
+- EPICOS - bicicleta é o conjunto dos epicos - objetivo macro
+- ESTORIAS - garfo - time de desenvolvimento entenda o que ser feito, uso e para que - nivel de negocio
+- TAREFAS - montar a roda no garfo e outras - conjunto atividdes time DEV desempenh para entregr estorias
+- criterio de aceite - lista de criterios a ser alcançados para a user story atenda requisitos usuario e aceita pelo PO
+- define limites para users story
+- ajuda PO a detalhar necessario para cliente
+- PLANNING POKER - mais usado par estimativa e planejamento - mensuração esformo e complexidade de tarefa e estoria
+- le as estorias
+- escolhe estoria e ve o que fazer
+stakeholder - pessoa ou grupo - direto ou indireto - gestao de resultado - 
+
+
+ROTINAS TIME AGIL
+- RITOS - 
+DAILY - 15 MIN - MESMO HORAIO E LUCR - PARTICIPAR DE TODOS OS DEV - AGREGA MAIS VALOR - AGREGAR VALOR - O DIA A DIA - SEM O PO E SM
+RETROSPECTIVIA - UMA VEZ E NO FINAL - SM E DEV  - NA SPRINT - NA SRPINT COMO UM TODO 
+REFINAMENTO - ADIANTAR DUVIDAD, AUMENTAR ENTENDIMENTO, QUALIDADE, RETORNO, DEV PERGUNTA AO PO, ESCOPO PRONTO, TODO TIME SCRUM - PASSO ANTES DA PLANNING - NTES DA RETOR E REVIWW
+REVIEW - TIME DEV - MOSTRAR TRBALHO DE CADA - TIRAR DUVIDA - PRESENTE PO E SM - TODOS OS INTERESSADOS PRESENTES - VER E VALIDAR O QUE E ENTREGUE - AGREGAR VALOR
+MATURIDADE DO TIME - LIGADO AO AMBIENTE ONDE ESTA - AUXILIA O PO - 
+SCRUM - TRANSPARENCIA - INSPEÇÃO - ADAPTAÇÃO

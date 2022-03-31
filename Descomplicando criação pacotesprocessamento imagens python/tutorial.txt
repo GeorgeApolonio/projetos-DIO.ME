@@ -1,0 +1,23 @@
+Modulo - sõ os arquivos .py
+Pacote - coleção de modulos dom hierarquia
+
+modularização - legibilidade
+
+pacotes - facilidade de compartilhamento e instalaçao
+
+Pupy - repositorio publico de pacotes
+wheel e sdist - tiposd e distribuicao
+setuptools - pcote usado em setup.py para gerar as distribuicoes
+twine - pacote usado par subir s distribuicoes no pypi
+
+CRIAR O PROJETO -> SETUP.PY -> GERA DISTRIBUICOES (WHEEL/SDIST) -> TWINE -> UPLOAD PARA PYPI (PIP INSTALL)
+
+geralmente os modulos são arquivos, mais uma pasta tambem pode ser desde que dentro dela crie um arquivo ___init___.py
+
+pacote com simples modulo ou uma subpasta
+pacote com varios modulos ou varias subpastas
+
+import pacote.modulo.py
+import pacote.modulo.modulo.modulo.py 
+
+from pacote.modulo.modulo import modulo.py

@@ -1,0 +1,64 @@
+SEGURNÇA DA INFORMAÇÃO
+- dados e informações estejam confidenciais, integros e disponíveis
+- tabem necessita de identificação, autenticação, autorização, não repúdio
+
+PROTOCOLO ICMP
+- seria como uma forma em que equipamentos vao se comunicar
+- internet control message protocol
+- mensagens/relatorios de erro
+
+
+PING
+- uma ferramente que usa o procolo ICMP
+- trabalha baseado na disponibilidade
+- request -><- response/reply entre equipamentos para saber se estão disponiveis
+
+
+BIBLIOTECA "OS" no PYTHON
+- utilizar funções do sistema operacional
+
+
+import os
+
+print('#' * 40)
+print(' ')
+ip_ou_host = input('Digite o ip ou o hoste a ser verificado: ')
+print(' ')
+print('#' * 40)
+
+# ping simples
+# chama comandos do S.O. disponiveis
+os.system('ping -t {}'.format(ip_ou_host))
+
+
+
+import os
+import time
+
+#ping multiplo - ser´passado vários hosts para teste em sequência
+
+with open('hosts.txt') as arquivo:
+    armazene = arquivo.read()
+    armazene = armazene.splitlines()
+    print(armazene)
+
+    for hosts in armazene:
+        print('Inicio do teste ------------------')
+        os.system('ping -n 2 {}'.format(hosts))
+        print('Fim do teste ---------------------')
+        time.sleep(3) # pausa 3 segundos
+
+
+SOCKETS
+acesso baixo nivel a interface de rede
+relaciona o programa com a rede atraves da API sockets
+
+TCP transport comunication protocol
+protocolo de comunicação
+camada de transporte da OSI
+trabalha com a integridade
+
+UDP user datagrama protocol
+camada de transporte
+não se preocupa com a integridade
+mais sim com disponibilidade
