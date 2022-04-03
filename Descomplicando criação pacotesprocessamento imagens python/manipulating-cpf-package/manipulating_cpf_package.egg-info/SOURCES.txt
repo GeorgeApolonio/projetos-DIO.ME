@@ -1,0 +1,11 @@
+README.md
+setup.py
+gerar_cpf/__init__.py
+gerar_cpf/gerar.py
+manipulating_cpf_package.egg-info/PKG-INFO
+manipulating_cpf_package.egg-info/SOURCES.txt
+manipulating_cpf_package.egg-info/dependency_links.txt
+manipulating_cpf_package.egg-info/requires.txt
+manipulating_cpf_package.egg-info/top_level.txt
+validar_cpf/__init__.py
+validar_cpf/validar.py

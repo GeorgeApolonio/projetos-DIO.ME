@@ -21,3 +21,73 @@ import pacote.modulo.py
 import pacote.modulo.modulo.modulo.py 
 
 from pacote.modulo.modulo import modulo.py
+
+SETUP.PY - arquivo principal das configuracoes -especifica coo pacote deve ser construido - 
+from setuptools import setup, find_packages
+
+with open("README.md, "r") as f:
+	page_description = f.read()
+
+with open("requirements.txt) as f:
+	requirements = f.read().splitlines()
+
+setup(
+name="package_name",
+version="0.0.1",
+author="my_name",
+authon_email="my email",
+description="my short description",
+long_description=page_description,
+long_description_content_type="text/markdwon",
+url="my_github_repository_project_link"
+packages=find_packages(),
+install_requires=requeriments
+python_requires='>=3.8',
+)
+
+REQUEREMENTS.TXT
+passas as dependencias que precisam ser instaladas com o pacote
+
+REDAME.md
+documentação a ser mostrada ma pagina do pypi
+nome do documento, autor, como instalar, outros.
+
+DISTRIBUIÇÕES - PARA SUBIR O PACOTES TEM QUE GERAR  DISTRIBUIÇÃO
+pip instalam primeiro a binaria e usam a de codigo fonte se necessário
+-acessar raiz do projeto
+-comandos de instlação
+	- python -m pip install --upgrade pip
+	- python -m pip install --user twine
+	- python -m pip install --user setuptools
+	- python setup.py sdist bdist
+	- python setup.py sdist
+-comsndos de distribuição
+
+PASSOS SUBIR PACOTE
+- criar conta no teste pypi
+- publicar no teste Pypi
+- instalar pacote usando teste pypi
+- testar pacote
+- criar conta no pypi
+- publicar no pypi
+- instalar pacote usando pypi
+
+
+SITES REGISTRO
+https://test.pypi.org/account/register/
+https://pypi.org/account/register/
+ 
+COMANDO PARA SUBIR
+python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+- pede usuario no pypi
+- pede a senha no pypi
+
+
+COMANDO PARA INSTALAR
+pip install -i https://test.pypi.org/simple/ manipulating-cpf-package
+pip install -i manipulating-cpf-package
+
+COMANDO PARA DESINSTALAR
+pip uninstall -i https://test.pypi.org/simple/ manipulating-cpf-package
+pip uninstall -i manipulating-cpf-package

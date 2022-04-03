@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: manipulating-cpf-package
+Version: 0.0.1
+Summary: gerador e validador de cpf
+Home-page: https://github.com/GeorgeApolonio/ManipularCPF.git
+Author: George
+Author-email: george.apolonio@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# manipulating_cpf_package
+
+Description:
+The package manipulating_cpf_package is used to:
+    Gerar um CPF;
+    Validar um CPF;
+
+
+## InstalaÃ§Ã£o
+
+Use the package manager [pip](https://pip.pypa.io/em/stable/) to install manipulating_cpf_package
+
+'''bash
+pip install manipulating_cpf_package
+'''
+
+## Usage
+
+'''python
+from manipulating_cpf_package.gerar_cpf import gerar
+from manipulating_cpf_package.validar_cpf import validar
+gerar.gerar_CPF()
+validar.validar_CPF()
+''' 
+
+## Author
+
+George
+
